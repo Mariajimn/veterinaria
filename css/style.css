@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{scroll-behavior: smooth;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de la cabecera */
+header {
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: url("../img/hermoso-retrato-mascota-perro-pequeno-jaula.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative; 
+    text-align: right;
+}
+
+/* Estilos del menú */
+header nav {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#1b1264; 
+    padding: 10px 0; 
+    z-index: 100; 
+    display: flex; /* alinea los elementos */
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Centrar los elementos */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px; 
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px;
+    font-weight: 300;
+    transition: .5s;
+}
+
+#hero {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 60px;
+    color: rgb(36, 100, 151);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: right;
+    margin: 20px;
+}
+
+#hero h1 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+#hero h3{
+    font-size: 18px;
+    color: #0a063b;
+    
+    margin-bottom: 40px;
+    text-align: center right;
+}    
+    
+
+#hero button{
+    background-color: #170d46;
+    font-size: 30px;
+    color: #95e19b;
+    padding: 12px 30px;
+    border-radius: 14px;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+
+nav li a:hover{
+    border-bottom: 2px solid #fff ;
+    border-top: 2px solid #fff;
+}
+
+#logo img{
+    transition: .5s;
+    width: 50px;
+    height: 50px; 
+    margin-left: 40px; 
+
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+
+}
+
+#hero button:hover{
+    transform: scale(0.9);
+    background: #000000;
+}
+
+/* servicios */
+
+#quienes-somos {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.text {
+    flex: 1;
+}
+ #quienes-somos h2{
+    color: greenyellow;
+ }
+.image {
+    flex: 1;
+    text-align: right;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* servicios */
+main{
+    width: 100%;
+    position: relative;
+
+}
+
+#servicios{
+    width: 100%;
+    padding: 40px 0 40px 0;
+    text-align: center;
+    padding-top: 60px;
+    background-size: cover;
+    background-color: rgba(0, 0, 255, 0.1);
+
+
+
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: greenyellow;
+
+}
+
+#servicios h3{
+    color: #0a0a0a;
+}
+
+
+#servicios .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly ;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+#servicios .v-servicios{
+    position: relative;
+}
+
+.v-servicios img{
+    transition: .5s;
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    object-fit: cover; 
+}
+
+.v-servicios img:hover{
+    transform: rotate(360deg);
+
+}
+
+/* PUNTO FISICO */
+
+#ubicacion {
+    background-image: url('../img/hermoso-retrato-mascota-perro-pequeno.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0; 
+    position: relative;
+}
+
+
+    #ubicacion h2 {
+        position: absolute; 
+        top: 0; 
+        left: 60%; 
+        transform: translateX(-50%); 
+        color: #fff; 
+        font-size: 32px; 
+        margin: 10px; 
+        padding: 10px 10px; 
+        background-color: rgba(34, 16, 99, 0.7); 
+        border-radius: 5px;
+        text-align: center; 
+    }
+
+#ubicacion .container {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+#ubicacion .v-ubicacion {
+    flex: 1; 
+    color: #0f0f0f;
+}
+
+#ubicacion  .mapa {
+    flex: 1; 
+}
+
+/* BLOG  */
+
+#blog{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+#blog h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+#blog {
+    font-size: 22px;
+    
+}
+
+#blog .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly ;
+    padding-top: 80px;
+}
+
+#blog .v-blog{
+    position: relative;
+}
+
+#blog .v-blog h3{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(17, 10, 68);
+    /* z-index: -1; */
+
+}
+
+#blog .v-blog img{
+    transition: .5s;
+    width: 280px; 
+    height: 280px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+}
+
+
+
+#blog .v-blog img:hover{
+    border-radius: 50%;
+}
+/* PRODUCTOS */
+
+#Productos{
+    width: 100%;
+    
+    background-color: rgb(193, 234, 185);
+    padding: 40px 0 40px 0;
+    text-align: center;
+    padding-top: 60px;
+    background-size: cover;
+
+
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(24, 14, 74);
+
+}
+
+#Productos h3{
+    color: #0e0d0d;
+}
+
+
+#Productos .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly ;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+#Productos .p-productos{
+    position: relative;
+}
+
+.p-productos img{
+    transition: .5s;
+    transition: .5s;
+    width: 280px; 
+    height: 280px; 
+    border-radius: 20%; 
+    overflow: hidden; 
+    object-fit: cover; 
+
+}
+
+.p-productos img:hover{
+    transform: rotate(280deg);
+
+}
+
+#Productos button {
+    background-color: #170d46;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+#Productos button:hover {
+    background-color: #1b1264;
+    border-color: #170d46;
+}
+
+#Productos button:focus {
+    outline: none;
+}
+
+
+/* formulario */
+
+#formulario {
+    background-image: url('../img/for\ 3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 100px 0;
+    padding-top: 40px;
+}
+
+
+#formulario .container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#formulario h3 {
+    color: black; 
+    font-size: 70px; 
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+
+#formulario .formulario-content {
+    flex: 1; 
+    padding: 20px; 
+}
+#formulario h2{
+    color: #fff;
+    text-align: center;
+}
+#formulario .imagen-fondo {
+    flex: 1;
+
+}
+
+form{
+    width: 600px;
+    margin: 50px auto;
+    background: rgb(28, 10, 80);
+    padding: 30px;
+    text-align: left;
+   
+}
+
+
+label{
+    display: block;
+    color: #fff;
+}
+
+input{
+    display: block;
+    margin-bottom: 26px;
+    padding: 6px 12px;
+    width: 85%;
+}
+
+#formulario button{
+    width: 60%;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: rgb(157, 227, 143);
+    border: 2px solid rgb(125, 149, 202);
+    cursor: pointer;
+    
+}
+
+/* Pie de pagina  */
+footer{
+    background: #000000;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+footer p{
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* phone */
+
+/* PHONES */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    header nav{
+    display: block;
+    text-align: center;
+    width: 96%;
+
+}
+
+header nav ul{
+    margin-top: 30px;
+}
+
+nav li a {
+    font-size: 20px;
+}
+
+#hero h2{
+    font-size: 36px;
+}
+#hero h1{
+    font-size: 26px;
+}
+#hero button{
+    font-size: 18px;
+    padding: 8px 14px;
+
+}
+
+#servicios .fila{
+    display: block;
+
+}
+
+#servicios h2{
+    font-size: 36px ;
+}
+
+#servicios p{
+    font-size: 16px;
+}
+
+#servicios .v-servicios{
+    margin-bottom: 30px;
+}
+
+#destinos .fila{
+    display: block;
+}
+
+#formulario input,
+#formulario select{
+    width: 100%;
+    display: block;
+}
+
+}
+
+
+
+
